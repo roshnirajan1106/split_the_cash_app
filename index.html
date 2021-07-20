@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPLIT THE CASH</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light " style="font-size: 25px; font-family: sans-serif; background-color: whitesmoke;width:50%;margin:auto">
+
+
+        <p style="width:50%;margin:auto;text-align: center;">SPLIT THE CASH</p>
+
+    </nav>
+    <div id="container">
+        <div id="mynetwork"></div>
+        <div id="container2">
+            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+              Answer
+            </span>
+            <div id="mynetwork2" style="display: none"></div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <form id="form">
+          <div class="form-group">
+            <p style="text-align:center;font-size:1.2rem" >Enter the Number of friends and Number of transactions</p>
+            <input type="number" style="margin-left:10px" name="friends" placeholder="friends" id ="friends">
+            <input type="number" style="margin-left:10px" name="transaction" placeholder="transaction" id="transaction">
+
+            <button id="button1" style="margin-left:10px; width:100px ; border-radius:3px;height:35px" class= "btn btn-primary" type="click" name="button">enter</button>
+          </div>
+
+        </form>
+        <form id="form1">
+          <div class="form-group">
+            <p style="text-align:center;font-size:1.2rem">Enter the person id. one to another person id . and the money </p>
+            <input type="text" id="name1" placeholder="Person 1">  to
+            <input type="text" id="name2" placeholder="Person 2">
+            <input type="number" id="money" placeholder="Money">
+            <button id="button2"style="margin-left:10px; width:100px ; border-radius:3px;height:35px" class= "btn btn-primary" type="click" name="button">enter</button>
+          </div>
+
+
+        </form>
+        <button style="width:100px" type="button" class="btn btn-danger" id="generate-graph">Done</button>
+
+        <br>
+
+        <button type="button" class="btn btn-success" id="solve">Solve</button>
+    </div>
+    <script src="heap.js"></script>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
